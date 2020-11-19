@@ -92,22 +92,6 @@ function main() {
   </div>
   <ul class="simple simple-toc" id="toc-list">
 <li>
-  <a class="reference reference-toplevel" href="#7" id="57">Types</a>
-  <ul class="simple simple-toc-section">
-      <li><a class="reference" href="#NamedTuple"
-    title="NamedTuple = concept typeof(T)
-    ## Concept type of a named tuple. Not used in this module.
-    T is tuple
-    isNamedTuple(T)"><wbr />Named<wbr />Tuple<span class="attachedType"></span></a></li>
-  <li><a class="reference" href="#UnnamedTuple"
-    title="UnnamedTuple = concept typeof(T)
-    ## Concept type of an unnamed tuple. Not used in this module.
-    T is tuple
-    not isNamedTuple(T)"><wbr />Unnamed<wbr />Tuple<span class="attachedType"></span></a></li>
-
-  </ul>
-</li>
-<li>
   <a class="reference reference-toplevel" href="#12" id="62">Procs</a>
   <ul class="simple simple-toc-section">
       <ul class="simple nested-toc-section">[]
@@ -142,40 +126,7 @@ function main() {
   <div id="tocRoot"></div>
   
   <p class="module-desc">This module allows for the indexing of tuples using slices.</p>
-  <div class="section" id="7">
-<h1><a class="toc-backref" href="#7">Types</a></h1>
-<dl class="item">
-<a id="NamedTuple"></a>
-<dt><pre><a href="tuples.html#NamedTuple"><span class="Identifier">NamedTuple</span></a> <span class="Other">=</span> <span class="Keyword">concept</span> <span class="Keyword">typeof</span><span class="Other">(</span><span class="Identifier">T</span><span class="Other">)</span>
-    <span class="Comment">## Concept type of a named tuple. Not used in this module.</span>
-    <span class="Identifier">T</span> <span class="Identifier">is</span> <span class="Keyword">tuple</span>
-    <span class="Identifier">isNamedTuple</span><span class="Other">(</span><span class="Identifier">T</span><span class="Other">)</span></pre></dt>
-<dd>
-
-
-&nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L6"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L6" class="link-seesrc" target="_blank" >Edit</a>
-
-</dd>
-<a id="UnnamedTuple"></a>
-<dt><pre><a href="tuples.html#UnnamedTuple"><span class="Identifier">UnnamedTuple</span></a> <span class="Other">=</span> <span class="Keyword">concept</span> <span class="Keyword">typeof</span><span class="Other">(</span><span class="Identifier">T</span><span class="Other">)</span>
-    <span class="Comment">## Concept type of an unnamed tuple. Not used in this module.</span>
-    <span class="Identifier">T</span> <span class="Identifier">is</span> <span class="Keyword">tuple</span>
-    <span class="Identifier">not</span> <span class="Identifier">isNamedTuple</span><span class="Other">(</span><span class="Identifier">T</span><span class="Other">)</span></pre></dt>
-<dd>
-
-
-&nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L10"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L10" class="link-seesrc" target="_blank" >Edit</a>
-
-</dd>
-
-</dl></div>
-<div class="section" id="12">
+  <div class="section" id="12">
 <h1><a class="toc-backref" href="#12">Procs</a></h1>
 <dl class="item">
 <a id="[],T,static[Slice[int]]"></a>
@@ -184,9 +135,9 @@ class="link-seesrc" target="_blank">Source</a>
 
 Slice indexing of tuples from an integer index to an integer index.
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L22"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L15"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L22" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L15" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="[],T,static[HSlice[BackwardsIndex,BackwardsIndex]]"></a>
@@ -196,9 +147,9 @@ class="link-seesrc" target="_blank">Source</a>
 
 Slice indexing of tuples from a backwards index to a backwards index.
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L30"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L23"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L30" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L23" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="[],T,static[HSlice[int,BackwardsIndex]]"></a>
@@ -207,9 +158,9 @@ class="link-seesrc" target="_blank">Source</a>
 
 Slice indexing of tuples from an integer index to a backwards index.
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L38"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L31"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L38" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L31" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="[],T,static[HSlice[BackwardsIndex,int]]"></a>
@@ -218,9 +169,9 @@ class="link-seesrc" target="_blank">Source</a>
 
 Slice indexing of tuples from a backwards index to an integer index.
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L46"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L39"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L46" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L39" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -234,9 +185,9 @@ class="link-seesrc" target="_blank">Source</a>
 
 A redefinition of tuple indexing with the index argument made to be static.
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L15"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L8"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L15" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L8" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="[].t,T,staticint"></a>
@@ -245,9 +196,9 @@ class="link-seesrc" target="_blank">Source</a>
 
 A redefinition of tuple indexing with the index argument made to be static.
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L18"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/tuples.nim#L11"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L18" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/tuples.nim#L11" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -260,7 +211,7 @@ class="link-seesrc" target="_blank">Source</a>
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2020-11-19 12:35:39 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2020-11-19 17:49:31 UTC</small>
       </div>
     </div>
   </div>
