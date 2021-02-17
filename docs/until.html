@@ -96,28 +96,30 @@ function main() {
   <ul class="simple simple-toc-section">
       <li><a class="reference" href="#Until"
     title="Until[T] = object
-  val*: T"><wbr />Until<span class="attachedType"></span></a></li>
+  val*: T">Until</a></li>
   <li><a class="reference" href="#UntilSlice"
-    title="UntilSlice[T; U] = HSlice[T, Until[U]]"><wbr />Until<wbr />Slice<span class="attachedType"></span></a></li>
+    title="UntilSlice[T; U] = HSlice[T, Until[U]]">UntilSlice</a></li>
 
   </ul>
 </li>
 <li>
-  <a class="reference reference-toplevel" href="#12" id="62">Procs</a>
+  <a class="reference reference-toplevel" href="#13" id="63">Funcs</a>
   <ul class="simple simple-toc-section">
       <ul class="simple nested-toc-section">contains
       <li><a class="reference" href="#contains%2CUntilSlice%5BT%2CU%5D%2CV"
-    title="contains[T, U, V](s: UntilSlice[T, U]; x: V): bool">contains,UntilSlice[T,U],V<span class="attachedType">UntilSlice</span></a></li>
+    title="contains[T, U, V](s: UntilSlice[T, U]; x: V): bool">contains,<wbr>UntilSlice[T,<wbr>U],<wbr>V</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">until
-      <li><a class="reference" href="#until%2CT%2CU"
-    title="until[T, U](a: T; b: U): UntilSlice[T, U]">until,T,U<span class="attachedType">UntilSlice</span></a></li>
+      <li><a class="reference" href="#until%2CT"
+    title="until[T](a: T): Until[T]">until,<wbr>T</a></li>
+  <li><a class="reference" href="#until%2CT%2CU"
+    title="until[T, U](a: T; b: U): UntilSlice[T, U]">until,<wbr>T,<wbr>U</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">len
       <li><a class="reference" href="#len%2CUntilSlice%5BT%2CU%5D"
-    title="len[T, U](s: UntilSlice[T, U]): int">len,UntilSlice[T,U]<span class="attachedType">UntilSlice</span></a></li>
+    title="len[T, U](s: UntilSlice[T, U]): int">len,<wbr>UntilSlice[T,<wbr>U]</a></li>
 
   </ul>
 
@@ -127,7 +129,7 @@ function main() {
   <a class="reference reference-toplevel" href="#15" id="65">Iterators</a>
   <ul class="simple simple-toc-section">
       <li><a class="reference" href="#items.i%2CUntilSlice%5BT%2CU%5D"
-    title="items[T, U](s: UntilSlice[T, U]): auto"><wbr />items<span class="attachedType">UntilSlice</span></a></li>
+    title="items[T, U](s: UntilSlice[T, U]): auto">items</a></li>
 
   </ul>
 </li>
@@ -168,40 +170,51 @@ class="link-seesrc" target="_blank">Source</a>
 </dd>
 
 </dl></div>
-<div class="section" id="12">
-<h1><a class="toc-backref" href="#12">Procs</a></h1>
+<div class="section" id="13">
+<h1><a class="toc-backref" href="#13">Funcs</a></h1>
 <dl class="item">
-<a id="until,T,U"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#until%2CT%2CU"><span class="Identifier">until</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">a</span><span class="Other">:</span> <span class="Identifier">T</span><span class="Other">;</span> <span class="Identifier">b</span><span class="Other">:</span> <span class="Identifier">U</span><span class="Other">)</span><span class="Other">:</span> <a href="until.html#UntilSlice"><span class="Identifier">UntilSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
+<a id="until,T"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#until%2CT"><span class="Identifier">until</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">a</span><span class="Other">:</span> <span class="Identifier">T</span><span class="Other">)</span><span class="Other">:</span> <a href="until.html#Until"><span class="Identifier">Until</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">]</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
-Initializer of a slice with lower bound <tt class="docutils literal"><span class="pre">a</span></tt> and upper bound marginally below <tt class="docutils literal"><span class="pre">b</span></tt>.
+Initializer of a value marginally smaller than <tt class="docutils literal"><span class="pre">a</span></tt>
 &nbsp;&nbsp;<a
 href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/until.nim#L12"
 class="link-seesrc" target="_blank">Source</a>
 <a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/until.nim#L12" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
+<a id="until,T,U"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#until%2CT%2CU"><span class="Identifier">until</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">a</span><span class="Other">:</span> <span class="Identifier">T</span><span class="Other">;</span> <span class="Identifier">b</span><span class="Other">:</span> <span class="Identifier">U</span><span class="Other">)</span><span class="Other">:</span> <a href="until.html#UntilSlice"><span class="Identifier">UntilSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
+<dd>
+
+Initializer of a slice with lower bound <tt class="docutils literal"><span class="pre">a</span></tt> and upper bound marginally below <tt class="docutils literal"><span class="pre">b</span></tt>.
+&nbsp;&nbsp;<a
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/until.nim#L16"
+class="link-seesrc" target="_blank">Source</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/until.nim#L16" class="link-seesrc" target="_blank" >Edit</a>
+
+</dd>
 <a id="contains,UntilSlice[T,U],V"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#contains%2CUntilSlice%5BT%2CU%5D%2CV"><span class="Identifier">contains</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="until.html#UntilSlice"><span class="Identifier">UntilSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">:</span> <span class="Identifier">V</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span></pre></dt>
+<dt><pre><span class="Keyword">func</span> <a href="#contains%2CUntilSlice%5BT%2CU%5D%2CV"><span class="Identifier">contains</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="until.html#UntilSlice"><span class="Identifier">UntilSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">:</span> <span class="Identifier">V</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span></pre></dt>
 <dd>
 
 Checks that <tt class="docutils literal"><span class="pre">x</span></tt> is not equal to <tt class="docutils literal"><span class="pre">s.b.val</span></tt>, then checks if <tt class="docutils literal"><span class="pre">s.a .. s.b.val</span></tt> contains <tt class="docutils literal"><span class="pre">x</span></tt>.
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/until.nim#L23"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/until.nim#L27"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/until.nim#L23" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/until.nim#L27" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="len,UntilSlice[T,U]"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#len%2CUntilSlice%5BT%2CU%5D"><span class="Identifier">len</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="until.html#UntilSlice"><span class="Identifier">UntilSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span></pre></dt>
+<dt><pre><span class="Keyword">func</span> <a href="#len%2CUntilSlice%5BT%2CU%5D"><span class="Identifier">len</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="until.html#UntilSlice"><span class="Identifier">UntilSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span></pre></dt>
 <dd>
 
 Returns the value of <tt class="docutils literal"><span class="pre">len(s.a .. s.b.val)</span></tt> and subtracts 1 if <tt class="docutils literal"><span class="pre">s.b.val</span></tt> is in <tt class="docutils literal"><span class="pre">s.a .. s.b.val</span></tt>. 
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/until.nim#L27"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/until.nim#L31"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/until.nim#L27" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/until.nim#L31" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -210,14 +223,14 @@ class="link-seesrc" target="_blank">Source</a>
 <h1><a class="toc-backref" href="#15">Iterators</a></h1>
 <dl class="item">
 <a id="items.i,UntilSlice[T,U]"></a>
-<dt><pre><span class="Keyword">iterator</span> <a href="#items.i%2CUntilSlice%5BT%2CU%5D"><span class="Identifier">items</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="until.html#UntilSlice"><span class="Identifier">UntilSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span></pre></dt>
+<dt><pre><span class="Keyword">iterator</span> <a href="#items.i%2CUntilSlice%5BT%2CU%5D"><span class="Identifier">items</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="until.html#UntilSlice"><span class="Identifier">UntilSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">noSideEffect</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Iterates over <tt class="docutils literal"><span class="pre">items(s.a .. s.b.val)</span></tt> and yields all the values that are not equal to <tt class="docutils literal"><span class="pre">s.b.val</span></tt>.
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/until.nim#L17"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/until.nim#L21"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/until.nim#L17" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/until.nim#L21" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -230,7 +243,7 @@ class="link-seesrc" target="_blank">Source</a>
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2020-11-19 12:35:34 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2021-02-17 09:36:26 UTC</small>
       </div>
     </div>
   </div>

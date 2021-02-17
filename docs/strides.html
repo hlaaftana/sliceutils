@@ -97,48 +97,53 @@ function main() {
       <li><a class="reference" href="#Stride"
     title="Stride[T; U] = object
   base*: T
-  step*: U"><wbr />Stride<span class="attachedType"></span></a></li>
+  step*: U">Stride</a></li>
   <li><a class="reference" href="#StridedSlice"
-    title="StridedSlice[T; U; V] = HSlice[Stride[T, U], V]"><wbr />Strided<wbr />Slice<span class="attachedType"></span></a></li>
+    title="StridedSlice[T; U; V] = HSlice[Stride[T, U], V]">StridedSlice</a></li>
 
   </ul>
 </li>
 <li>
-  <a class="reference reference-toplevel" href="#12" id="62">Procs</a>
+  <a class="reference reference-toplevel" href="#13" id="63">Funcs</a>
   <ul class="simple simple-toc-section">
       <ul class="simple nested-toc-section">contains
       <li><a class="reference" href="#contains%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CW"
-    title="contains[T, U, V, W: SomeNumber](s: StridedSlice[T, U, V]; x: W): bool">contains,StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],W<span class="attachedType">StridedSlice</span></a></li>
+    title="contains[T, U, V, W: SomeNumber](s: StridedSlice[T, U, V]; x: W): bool">contains,<wbr>StridedSlice[T: SomeNumber,<wbr>U: SomeNumber,<wbr>V: SomeNumber],<wbr>W</a></li>
+
+  </ul>
+  <ul class="simple nested-toc-section">stride
+      <li><a class="reference" href="#stride%2CT%2CU"
+    title="stride[T, U: SomeNumber](base: T; step: U): Stride[T, U]">stride,<wbr>T,<wbr>U</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">len
       <li><a class="reference" href="#len%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D"
-    title="len[T, U, V: SomeNumber](s: StridedSlice[T, U, V]): int">len,StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber]<span class="attachedType">StridedSlice</span></a></li>
+    title="len[T, U, V: SomeNumber](s: StridedSlice[T, U, V]): int">len,<wbr>StridedSlice[T: SomeNumber,<wbr>U: SomeNumber,<wbr>V: SomeNumber]</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">by
       <li><a class="reference" href="#by%2CT%2CU"
-    title="by[T, U: SomeNumber](base: T; step: U): Stride[T, U]">by,T,U<span class="attachedType">Stride</span></a></li>
+    title="by[T, U: SomeNumber](base: T; step: U): Stride[T, U]">by,<wbr>T,<wbr>U</a></li>
   <li><a class="reference" href="#by%2CHSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%5D%2CU"
-    title="by[T, U, V: SomeNumber](s: HSlice[T, U]; step: U): StridedSlice[T, U, V]">by,HSlice[T: SomeNumber,U: SomeNumber],U<span class="attachedType">StridedSlice</span></a></li>
+    title="by[T, U, V: SomeNumber](s: HSlice[T, U]; step: U): StridedSlice[T, U, V]">by,<wbr>HSlice[T: SomeNumber,<wbr>U: SomeNumber],<wbr>U</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">[]
       <li><a class="reference" href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CI"
-    title="`[]`[I: Ordinal; T, U, V: SomeNumber](s: StridedSlice[T, U, V]; i: I): auto">[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],I<span class="attachedType">StridedSlice</span></a></li>
+    title="`[]`[I: Ordinal; T, U, V: SomeNumber](s: StridedSlice[T, U, V]; i: I): auto">[],<wbr>StridedSlice[T: SomeNumber,<wbr>U: SomeNumber,<wbr>V: SomeNumber],<wbr>I</a></li>
   <li><a class="reference" href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CBackwardsIndex"
-    title="`[]`[T, U, V: SomeNumber](s: StridedSlice[T, U, V]; i: BackwardsIndex): auto">[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],BackwardsIndex<span class="attachedType">StridedSlice</span></a></li>
+    title="`[]`[T, U, V: SomeNumber](s: StridedSlice[T, U, V]; i: BackwardsIndex): auto">[],<wbr>StridedSlice[T: SomeNumber,<wbr>U: SomeNumber,<wbr>V: SomeNumber],<wbr>BackwardsIndex</a></li>
   <li><a class="reference" href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BI%3A+Ordinal%2CI%3A+Ordinal%5D"
-    title="`[]`[I: Ordinal; T, U, V: SomeNumber](s: StridedSlice[T, U, V]; i: HSlice[I, I]): auto">[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[I: Ordinal,I: Ordinal]<span class="attachedType">StridedSlice</span></a></li>
+    title="`[]`[I: Ordinal; T, U, V: SomeNumber](s: StridedSlice[T, U, V]; i: HSlice[I, I]): auto">[],<wbr>StridedSlice[T: SomeNumber,<wbr>U: SomeNumber,<wbr>V: SomeNumber],<wbr>HSlice[I: Ordinal,<wbr>I: Ordinal]</a></li>
   <li><a class="reference" href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BI%3A+Ordinal%2CBackwardsIndex%5D"
     title="`[]`[I: Ordinal; T, U, V: SomeNumber](s: StridedSlice[T, U, V];
-                                      i: HSlice[I, BackwardsIndex]): auto">[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[I: Ordinal,BackwardsIndex]<span class="attachedType">StridedSlice</span></a></li>
+                                      i: HSlice[I, BackwardsIndex]): auto">[],<wbr>StridedSlice[T: SomeNumber,<wbr>U: SomeNumber,<wbr>V: SomeNumber],<wbr>HSlice[I: Ordinal,<wbr>BackwardsIndex]</a></li>
   <li><a class="reference" href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BBackwardsIndex%2CI%3A+Ordinal%5D"
     title="`[]`[I: Ordinal; T, U, V: SomeNumber](s: StridedSlice[T, U, V];
-                                      i: HSlice[BackwardsIndex, I]): auto">[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[BackwardsIndex,I: Ordinal]<span class="attachedType">StridedSlice</span></a></li>
+                                      i: HSlice[BackwardsIndex, I]): auto">[],<wbr>StridedSlice[T: SomeNumber,<wbr>U: SomeNumber,<wbr>V: SomeNumber],<wbr>HSlice[BackwardsIndex,<wbr>I: Ordinal]</a></li>
   <li><a class="reference" href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BBackwardsIndex%2CBackwardsIndex%5D"
     title="`[]`[T, U, V: SomeNumber](s: StridedSlice[T, U, V];
-                          i: HSlice[BackwardsIndex, BackwardsIndex]): auto">[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[BackwardsIndex,BackwardsIndex]<span class="attachedType">StridedSlice</span></a></li>
+                          i: HSlice[BackwardsIndex, BackwardsIndex]): auto">[],<wbr>StridedSlice[T: SomeNumber,<wbr>U: SomeNumber,<wbr>V: SomeNumber],<wbr>HSlice[BackwardsIndex,<wbr>BackwardsIndex]</a></li>
 
   </ul>
 
@@ -148,7 +153,7 @@ function main() {
   <a class="reference reference-toplevel" href="#15" id="65">Iterators</a>
   <ul class="simple simple-toc-section">
       <li><a class="reference" href="#items.i%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D"
-    title="items[T, U, V: SomeNumber](s: StridedSlice[T, U, V]): auto"><wbr />items<span class="attachedType">StridedSlice</span></a></li>
+    title="items[T, U, V: SomeNumber](s: StridedSlice[T, U, V]): auto">items</a></li>
 
   </ul>
 </li>
@@ -190,11 +195,11 @@ class="link-seesrc" target="_blank">Source</a>
 </dd>
 
 </dl></div>
-<div class="section" id="12">
-<h1><a class="toc-backref" href="#12">Procs</a></h1>
+<div class="section" id="13">
+<h1><a class="toc-backref" href="#13">Funcs</a></h1>
 <dl class="item">
-<a id="by,T,U"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#by%2CT%2CU"><span class="Identifier">by</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">base</span><span class="Other">:</span> <span class="Identifier">T</span><span class="Other">;</span> <span class="Identifier">step</span><span class="Other">:</span> <span class="Identifier">U</span><span class="Other">)</span><span class="Other">:</span> <a href="strides.html#Stride"><span class="Identifier">Stride</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
+<a id="stride,T,U"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#stride%2CT%2CU"><span class="Identifier">stride</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">base</span><span class="Other">:</span> <span class="Identifier">T</span><span class="Other">;</span> <span class="Identifier">step</span><span class="Other">:</span> <span class="Identifier">U</span><span class="Other">)</span><span class="Other">:</span> <a href="strides.html#Stride"><span class="Identifier">Stride</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Initializes a stride with base <tt class="docutils literal"><span class="pre">base</span></tt> and step <tt class="docutils literal"><span class="pre">step</span></tt>.
@@ -204,79 +209,78 @@ class="link-seesrc" target="_blank">Source</a>
 <a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L13" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
-<a id="by,HSlice[T: SomeNumber,U: SomeNumber],U"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#by%2CHSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%5D%2CU"><span class="Identifier">by</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <span class="Identifier">HSlice</span><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">step</span><span class="Other">:</span> <span class="Identifier">U</span><span class="Other">)</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
-    <span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
+<a id="by,T,U"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#by%2CT%2CU"><span class="Identifier">by</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">base</span><span class="Other">:</span> <span class="Identifier">T</span><span class="Other">;</span> <span class="Identifier">step</span><span class="Other">:</span> <span class="Identifier">U</span><span class="Other">)</span><span class="Other">:</span> <a href="strides.html#Stride"><span class="Identifier">Stride</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
-Initializes a stride with over the slice <tt class="docutils literal"><span class="pre">s</span></tt> with step <tt class="docutils literal"><span class="pre">step</span></tt>.
+Initializes a stride with base <tt class="docutils literal"><span class="pre">base</span></tt> and step <tt class="docutils literal"><span class="pre">step</span></tt>.
 &nbsp;&nbsp;<a
 href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L17"
 class="link-seesrc" target="_blank">Source</a>
 <a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L17" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
-<a id="contains,StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],W"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#contains%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CW"><span class="Identifier">contains</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">,</span> <span class="Identifier">W</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">:</span> <span class="Identifier">W</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span></pre></dt>
+<a id="by,HSlice[T: SomeNumber,U: SomeNumber],U"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#by%2CHSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%5D%2CU"><span class="Identifier">by</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <span class="Identifier">HSlice</span><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">step</span><span class="Other">:</span> <span class="Identifier">U</span><span class="Other">)</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+    <span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
-Returns true if <tt class="docutils literal"><span class="pre">x</span></tt> is a value given by iterating over <tt class="docutils literal"><span class="pre">s</span></tt>. Requires <tt class="docutils literal"><span class="pre">W - T -&gt; X</span></tt> and <tt class="docutils literal"><span class="pre">X mod U -&gt; Y: SomeNumber</span></tt>, meaning you need math.mod for floats.
+Initializes a stride with over the slice <tt class="docutils literal"><span class="pre">s</span></tt> with step <tt class="docutils literal"><span class="pre">step</span></tt>.
 &nbsp;&nbsp;<a
 href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L21"
 class="link-seesrc" target="_blank">Source</a>
 <a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L21" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
+<a id="contains,StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],W"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#contains%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CW"><span class="Identifier">contains</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">,</span> <span class="Identifier">W</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">:</span> <span class="Identifier">W</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span></pre></dt>
+<dd>
+
+Returns true if <tt class="docutils literal"><span class="pre">x</span></tt> is a value given by iterating over <tt class="docutils literal"><span class="pre">s</span></tt>. Requires <tt class="docutils literal"><span class="pre">W - T -&gt; X</span></tt> and <tt class="docutils literal"><span class="pre">X mod U -&gt; Y: SomeNumber</span></tt>, meaning you need math.mod for floats.
+&nbsp;&nbsp;<a
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L25"
+class="link-seesrc" target="_blank">Source</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L25" class="link-seesrc" target="_blank" >Edit</a>
+
+</dd>
 <a id="len,StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber]"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#len%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D"><span class="Identifier">len</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">func</span> <a href="#len%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D"><span class="Identifier">len</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Guess of number of iterations over <tt class="docutils literal"><span class="pre">s</span></tt>.
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L27"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L31"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L27" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L31" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],I"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CI"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">I</span><span class="Other">:</span> <span class="Identifier">Ordinal</span><span class="Other">;</span> <span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">I</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+<dt><pre><span class="Keyword">func</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CI"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">I</span><span class="Other">:</span> <span class="Identifier">Ordinal</span><span class="Other">;</span> <span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">I</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
     <span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Returns the number given at the <tt class="docutils literal"><span class="pre">i</span></tt> th iteration over <tt class="docutils literal"><span class="pre">s</span></tt>.
-&nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L41"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L41" class="link-seesrc" target="_blank" >Edit</a>
-
-</dd>
-<a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],BackwardsIndex"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CBackwardsIndex"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">BackwardsIndex</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
-    <span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
-<dd>
-
-Returns the number given at the <tt class="docutils literal"><span class="pre">i</span></tt> th iteration starting from the end over <tt class="docutils literal"><span class="pre">s</span></tt>.
 &nbsp;&nbsp;<a
 href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L45"
 class="link-seesrc" target="_blank">Source</a>
 <a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L45" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
-<a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[I: Ordinal,I: Ordinal]"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BI%3A+Ordinal%2CI%3A+Ordinal%5D"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">I</span><span class="Other">:</span> <span class="Identifier">Ordinal</span><span class="Other">;</span> <span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span>
-    <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">HSlice</span><span class="Other">[</span><span class="Identifier">I</span><span class="Other">,</span> <span class="Identifier">I</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
+<a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],BackwardsIndex"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CBackwardsIndex"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">BackwardsIndex</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+    <span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
-Returns <tt class="docutils literal"><span class="pre">s[i.a] .. s[i.b]</span></tt>.
+Returns the number given at the <tt class="docutils literal"><span class="pre">i</span></tt> th iteration starting from the end over <tt class="docutils literal"><span class="pre">s</span></tt>.
 &nbsp;&nbsp;<a
 href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L49"
 class="link-seesrc" target="_blank">Source</a>
 <a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L49" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
-<a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[I: Ordinal,BackwardsIndex]"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BI%3A+Ordinal%2CBackwardsIndex%5D"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">I</span><span class="Other">:</span> <span class="Identifier">Ordinal</span><span class="Other">;</span> <span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span>
-    <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">HSlice</span><span class="Other">[</span><span class="Identifier">I</span><span class="Other">,</span> <span class="Identifier">BackwardsIndex</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
+<a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[I: Ordinal,I: Ordinal]"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BI%3A+Ordinal%2CI%3A+Ordinal%5D"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">I</span><span class="Other">:</span> <span class="Identifier">Ordinal</span><span class="Other">;</span> <span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span>
+    <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">HSlice</span><span class="Other">[</span><span class="Identifier">I</span><span class="Other">,</span> <span class="Identifier">I</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Returns <tt class="docutils literal"><span class="pre">s[i.a] .. s[i.b]</span></tt>.
@@ -286,9 +290,9 @@ class="link-seesrc" target="_blank">Source</a>
 <a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L53" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
-<a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[BackwardsIndex,I: Ordinal]"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BBackwardsIndex%2CI%3A+Ordinal%5D"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">I</span><span class="Other">:</span> <span class="Identifier">Ordinal</span><span class="Other">;</span> <span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span>
-    <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">HSlice</span><span class="Other">[</span><span class="Identifier">BackwardsIndex</span><span class="Other">,</span> <span class="Identifier">I</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
+<a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[I: Ordinal,BackwardsIndex]"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BI%3A+Ordinal%2CBackwardsIndex%5D"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">I</span><span class="Other">:</span> <span class="Identifier">Ordinal</span><span class="Other">;</span> <span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span>
+    <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">HSlice</span><span class="Other">[</span><span class="Identifier">I</span><span class="Other">,</span> <span class="Identifier">BackwardsIndex</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Returns <tt class="docutils literal"><span class="pre">s[i.a] .. s[i.b]</span></tt>.
@@ -298,10 +302,9 @@ class="link-seesrc" target="_blank">Source</a>
 <a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L57" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
-<a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[BackwardsIndex,BackwardsIndex]"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BBackwardsIndex%2CBackwardsIndex%5D"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span>
-                               <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">HSlice</span><span class="Other">[</span><span class="Identifier">BackwardsIndex</span><span class="Other">,</span> <span class="Identifier">BackwardsIndex</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
-    <span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
+<a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[BackwardsIndex,I: Ordinal]"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BBackwardsIndex%2CI%3A+Ordinal%5D"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">I</span><span class="Other">:</span> <span class="Identifier">Ordinal</span><span class="Other">;</span> <span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span>
+    <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">HSlice</span><span class="Other">[</span><span class="Identifier">BackwardsIndex</span><span class="Other">,</span> <span class="Identifier">I</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Returns <tt class="docutils literal"><span class="pre">s[i.a] .. s[i.b]</span></tt>.
@@ -311,20 +314,34 @@ class="link-seesrc" target="_blank">Source</a>
 <a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L61" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
+<a id="[],StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber],HSlice[BackwardsIndex,BackwardsIndex]"></a>
+<dt><pre><span class="Keyword">func</span> <a href="#%5B%5D%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D%2CHSlice%5BBackwardsIndex%2CBackwardsIndex%5D"><span class="Identifier">`[]`</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">;</span>
+                               <span class="Identifier">i</span><span class="Other">:</span> <span class="Identifier">HSlice</span><span class="Other">[</span><span class="Identifier">BackwardsIndex</span><span class="Other">,</span> <span class="Identifier">BackwardsIndex</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+    <span class="Identifier">inline</span></span><span class="Other">.}</span></span></pre></dt>
+<dd>
+
+Returns <tt class="docutils literal"><span class="pre">s[i.a] .. s[i.b]</span></tt>.
+&nbsp;&nbsp;<a
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L65"
+class="link-seesrc" target="_blank">Source</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L65" class="link-seesrc" target="_blank" >Edit</a>
+
+</dd>
 
 </dl></div>
 <div class="section" id="15">
 <h1><a class="toc-backref" href="#15">Iterators</a></h1>
 <dl class="item">
 <a id="items.i,StridedSlice[T: SomeNumber,U: SomeNumber,V: SomeNumber]"></a>
-<dt><pre><span class="Keyword">iterator</span> <a href="#items.i%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D"><span class="Identifier">items</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span></pre></dt>
+<dt><pre><span class="Keyword">iterator</span> <a href="#items.i%2CStridedSlice%5BT%3A+SomeNumber%2CU%3A+SomeNumber%2CV%3A+SomeNumber%5D"><span class="Identifier">items</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">:</span> <span class="Identifier">SomeNumber</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <a href="strides.html#StridedSlice"><span class="Identifier">StridedSlice</span></a><span class="Other">[</span><span class="Identifier">T</span><span class="Other">,</span> <span class="Identifier">U</span><span class="Other">,</span> <span class="Identifier">V</span><span class="Other">]</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">auto</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+    <span class="Identifier">noSideEffect</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Iterates over <tt class="docutils literal"><span class="pre">s</span></tt>.
 &nbsp;&nbsp;<a
-href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L34"
+href="https://github.com/hlaaftana/sliceutils/tree/master/src/sliceutils/strides.nim#L38"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L34" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/hlaaftana/sliceutils/edit/master/src/sliceutils/strides.nim#L38" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -337,7 +354,7 @@ class="link-seesrc" target="_blank">Source</a>
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2020-11-19 12:35:42 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2021-02-17 09:36:25 UTC</small>
       </div>
     </div>
   </div>
